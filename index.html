@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Krishiv Shukla — Software Engineer</title>
+  <meta name="description" content="Portfolio of Krishiv Shukla: beginner Python projects and concepts learned by solving problems." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&family=Bowlby+One&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app" class="app">
+    <video class="bgvid" src="assets/bg.mp4" autoplay loop muted playsinline aria-hidden="true"></video>
+    <div class="scrim" aria-hidden="true"></div>
+
+    <main class="main">
+      <div>
+        <h1 class="title font-display">
+          <span class="hv" style="--pad: 0.12em">Krishiv</span><br />
+          <span class="hv" style="--pad: 0.12em">Shukla</span>
+        </h1>
+        <p class="designation">
+          <span class="hv" style="--pad: 0.2em">Software Engineer</span>
+        </p>
+
+        <nav class="navbar" aria-label="Main">
+          <button class="link-wrapper font-display nav-link" data-view="projects" data-underline aria-pressed="false">Projects</button>
+          <button class="link-wrapper font-display nav-link" data-view="about" data-underline aria-pressed="false">About</button>
+          <button class="link-wrapper font-display nav-link" data-view="contact" data-underline aria-pressed="false">Contact Me</button>
+        </nav>
+      </div>
+
+      <div class="toggle-row">
+        <button id="calm-toggle" class="link-wrapper font-display calm-toggle" role="switch" aria-checked="false">Cybersickness: OFF</button>
+      </div>
+    </main>
+
+    <section id="dialog" class="dialog" role="dialog" hidden>
+      <div class="dialog-body">
+
+        <div class="panel" id="panel-projects" hidden>
+          <div class="panel-head">
+            <h2 class="font-display panel-title"><span class="hv" style="--pad: 0.25rem">Projects</span></h2>
+            <button class="close-btn" data-close aria-label="Close">×</button>
+          </div>
+          <ol class="project-list">
+            <li class="card list-in" style="animation-delay: 120ms">
+              <span class="font-display card-title"><span class="hv" style="--pad: 0.25rem">File Organiser</span></span>
+              <p class="body-text">A Python-based file organizer that auto-sorts files of different types into category subfolders by their extension.</p>
+              <div class="card-link"><a class="link-wrapper font-display jelly-link" href="https://github.com/OakPoem/File-Organizer" target="_blank" rel="noopener noreferrer">View on GitHub</a></div>
+            </li>
+            <li class="card list-in" style="animation-delay: 230ms">
+              <span class="font-display card-title"><span class="hv" style="--pad: 0.25rem">Beginner Web Scraper</span></span>
+              <p class="body-text">A beginner Python web scraping project that scrapes a fake jobs listing site, extracts the job title, company name and location, and writes them to a clean, readable CSV file.</p>
+              <div class="card-link"><a class="link-wrapper font-display jelly-link" href="https://github.com/OakPoem/Beginner-Web-scraper" target="_blank" rel="noopener noreferrer">View on GitHub</a></div>
+            </li>
+            <li class="card list-in" style="animation-delay: 340ms">
+              <span class="font-display card-title"><span class="hv" style="--pad: 0.25rem">Beginner Data Manipulation</span></span>
+              <p class="body-text">A beginner Python data manipulation project that reads pharmaceutical sales data from a CSV file, performs operations on it with Pandas, and graphs the results with Matplotlib.</p>
+              <div class="card-link"><a class="link-wrapper font-display jelly-link" href="https://github.com/OakPoem/Data-modification-and-Plotting" target="_blank" rel="noopener noreferrer">View on GitHub</a></div>
+            </li>
+          </ol>
+        </div>
+
+        <div class="panel" id="panel-about" hidden>
+          <div class="panel-head">
+            <h2 class="font-display panel-title"><span class="hv" style="--pad: 0.25rem">About</span></h2>
+            <button class="close-btn" data-close aria-label="Close">×</button>
+          </div>
+          <div class="body-text stack">
+            <p>I'm a beginner to programming, starting with Python.</p>
+            <p>This place is to showcase my projects and project ideas, along with the core concepts I learn from solving problems.</p>
+          </div>
+        </div>
+
+        <div class="panel" id="panel-contact" hidden>
+          <div class="panel-head">
+            <h2 class="font-display panel-title"><span class="hv" style="--pad: 0.25rem">Contact Me</span></h2>
+            <button class="close-btn" data-close aria-label="Close">×</button>
+          </div>
+          <ul class="contact-list">
+            <li class="card">
+              <span class="eyebrow">Email</span>
+              <a class="link-wrapper font-display jelly-link" href="https://mail.google.com/mail/?view=cm&fs=1&to=krishivshukla@gmail.com" target="_blank" rel="noopener noreferrer">krishivshukla@gmail.com</a>
+            </li>
+            <li class="card">
+              <span class="eyebrow">GitHub</span>
+              <a class="link-wrapper font-display jelly-link" href="https://github.com/OakPoem" target="_blank" rel="noopener noreferrer">github.com/OakPoem</a>
+            </li>
+            <li class="card">
+              <span class="eyebrow">Based in</span>
+              <a class="link-wrapper font-display jelly-link" href="https://www.google.com/maps/search/?api=1&query=Noida,+India" target="_blank" rel="noopener noreferrer">Noida, India</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
